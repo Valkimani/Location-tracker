@@ -16,8 +16,14 @@
         
         <script>
             //console.log("Location tracker")//
-            //display what OS the user is using
+            //display what OS the user is on
             console.log(window.clientInformation.platform)
+            //Use conditional statements to determine OS
+            if(window.clientInformation.platform === "MacIntel"){
+                alert("You're using a Mac!")
+            } else {
+                alert ("You're not using a Mac!")
+            }
         </script>
     </body>
 </html>
